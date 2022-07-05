@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+
+    <link rel="stylesheet" href="./css/estilos_comunes.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- nav bar -->
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <!-- <a class="navbar-brand" href="#"> -->
+
+
+                    &ensp; <img src="./img/logo.svg" width="20%" class="figure-img img-fluid rounded" srcset="">
+
+                    <!-- </a> -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="Index.html">Inicio <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tiendas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Informaciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                            <button class="btn btn btn-light my-2 my-sm-0" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- formulario -->
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Contactanos</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Nombre</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Nombre" required>
+                        <small id="emailHelp" class="form-text text-muted">nombre de la persona</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Apellido</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Apellido de la persona" required>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputPassword1"
+                            placeholder="email de la persona" required>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Tipo de contacto </label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Ventas
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Servicio al cliente
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                                value="option3">
+                            <label class="form-check-label" for="exampleRadios3">
+                                Mejoras / reclamos
+                            </label>
+                        </div>
+                    </div>
+                    <label for="exampleInputEmail1">Pais</label>
+                    <select class="form-control" required>
+                        <option>Chile</option>
+                        <option>Argentina</option>
+                        <option>Peru</option>
+                    </select>
+                    <br>
+                    <label for="exampleFormControlTextarea1">Detalle</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required
+                        placeholder="detalle "></textarea>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                        <label class="form-check-label" for="exampleCheck1">Acepto Los Terminoa y
+                            condiciones</label>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button class="btn btn-outline-dark" type="reset">Reiniciar valores</button>
+                </form>
+                <br>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="row footer">
+            <div class="col-lg-4 col-md-4">
+                <div style="padding-top: 50px">
+
+                    CORREO: FERRETERIA@GMAIL.com
+                    <br>
+                    TELEFONO: +569 1234 1234
+                </div>
+            </div>
+            <div class="col-lg-4" style="padding: 10px;">
+
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/BQyLyPuhTuo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-4" style="padding: 10px;">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/3hy5oaTiX7M"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
