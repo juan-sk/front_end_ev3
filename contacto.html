@@ -72,44 +72,50 @@
         <div class="row">
             <div class="col-md-6">
                 <h1>Contactanos</h1>
-                <form>
+                <form action="#" method="post" name="formulario" id="formulario">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Nombre</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        <label for="exampleInputEmail1">Nombre*</label>
+                        <input type="text" class="form-control" aria-describedby="emailHelp" id=nombre
                             placeholder="Nombre" required>
                         <small id="emailHelp" class="form-text text-muted">nombre de la persona</small>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Apellido</label>
+                        <label for="exampleInputEmail1">RUT*</label>
                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Apellido de la persona" required>
+                            name=rut placeholder="RUT : 12333444-5" required>
 
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Email</label>
-                        <input type="email" class="form-control" id="exampleInputPassword1"
-                            placeholder="email de la persona" required>
+                        <label for="exampleInputPassword1">Email*</label>
+                        <input type="email" class="form-control" id="email" name=email placeholder="email de la persona"
+                            required>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Telefono*</label>
+                        <input type="number" class="form-control" id="exampleInputPassword1" placeholder="N° telefono"
+                            name="telefono" required>
 
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputPassword1">Tipo de contacto </label>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="contacto1"
                                 value="option1" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 Ventas
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="contacto2"
                                 value="option2">
                             <label class="form-check-label" for="exampleRadios2">
                                 Servicio al cliente
                             </label>
                         </div>
                         <div class="form-check disabled">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="contacto3"
                                 value="option3">
                             <label class="form-check-label" for="exampleRadios3">
                                 Mejoras / reclamos
@@ -117,21 +123,25 @@
                         </div>
                     </div>
                     <label for="exampleInputEmail1">Pais</label>
-                    <select class="form-control" required>
+                    <select class="form-control" required name="pais">
                         <option>Chile</option>
                         <option>Argentina</option>
                         <option>Peru</option>
                     </select>
                     <br>
                     <label for="exampleFormControlTextarea1">Detalle</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required name=detalle
                         placeholder="detalle "></textarea>
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required name="terminos">
                         <label class="form-check-label" for="exampleCheck1">Acepto Los Terminoa y
-                            condiciones</label>
+                            condiciones*</label>
                     </div>
                     <br>
+
+                    <input type="button" value="Enviar" id="btn_enviar" name="btn_enviar"
+                        onclick="javascript:void(validarFormulario())">
+
                     <button type="submit" class="btn btn-primary">Enviar</button>
                     <button class="btn btn-outline-dark" type="reset">Reiniciar valores</button>
                 </form>

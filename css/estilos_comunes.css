@@ -9,3 +9,7 @@ img {
 .footer {
     background-color: azure;
 }
+
+.error {
+    color: red;
+}
